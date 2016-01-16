@@ -8,5 +8,6 @@ bin/
 out/
 *.iml
 nbproject/
+build/
 build.xml
 *.mf

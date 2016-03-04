@@ -1,4 +1,4 @@
-package com.jse;
+package com.jse.fundamentals.syntax;
 
 import java.util.Scanner;
 
@@ -26,10 +26,12 @@ public class TriangleArea {
         area /= 2.0;
         area = Math.abs(area);
         
+        System.out.print("\nArea of triangle: ");
+        
         if (area != 0) {
-            System.out.printf("\nArea: %.2f", area);
+            System.out.printf("%.2f", area);
         } else {
-            System.out.printf("\nArea: 0.\nnot a triangle");
+            System.out.printf("0\n(not a triangle)");
         }
         
         input.close();

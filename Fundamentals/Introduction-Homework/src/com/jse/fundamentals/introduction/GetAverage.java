@@ -1,4 +1,4 @@
-package com.jse;
+package com.jse.fundamentals.introduction;
 
 import java.util.Scanner;
 

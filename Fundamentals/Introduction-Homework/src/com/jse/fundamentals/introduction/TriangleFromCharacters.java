@@ -1,10 +1,11 @@
-package com.jse;
+package com.jse.fundamentals.introduction;
 
 import java.util.Scanner;
 
 public class TriangleFromCharacters {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
+        System.out.print("number of lines = ");
         int lines = Integer.parseInt(console.nextLine());
         
         for (int i = 0; i < lines * 2; i++) {

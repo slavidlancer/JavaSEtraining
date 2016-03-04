@@ -1,4 +1,4 @@
-package com.jse;
+package com.jse.fundamentals.introduction;
 
 public class PrintCharacters {
     public static void main(String[] args) {

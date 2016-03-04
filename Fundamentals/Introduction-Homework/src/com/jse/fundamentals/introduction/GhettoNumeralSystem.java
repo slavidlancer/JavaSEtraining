@@ -1,4 +1,4 @@
-package com.jse;
+package com.jse.fundamentals.introduction;
 
 import java.util.Scanner;
 
@@ -9,6 +9,7 @@ public class GhettoNumeralSystem {
                 "Yo", "Dis", "Hood", "Jam", "Mack"
         };
         Scanner console = new Scanner(System.in);
+        System.out.print("number = ");
         String input = console.nextLine();
         StringBuilder output = new StringBuilder();
 
@@ -17,7 +18,7 @@ public class GhettoNumeralSystem {
             output.append(ghettoNumbers[number]);
         }
 
-        System.out.print(output);
+        System.out.print("transformed: " + output);
         console.close();
     }
 }

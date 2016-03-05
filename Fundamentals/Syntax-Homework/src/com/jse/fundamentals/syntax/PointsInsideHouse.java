@@ -32,7 +32,7 @@ public class PointsInsideHouse {
         if ((x >= left) && (x <= right) && (y >= bottom) && (y <= top)) {
             return true;
         }
-
+        
         return false;
     }
     
@@ -41,7 +41,7 @@ public class PointsInsideHouse {
         double areaAPB = getTriangleArea(12.50, 8.50, x, y, 22.50, 8.50);
         double areaBPC = getTriangleArea(22.50, 8.50, x, y, 17.50, 3.50);
         double areaCPA = getTriangleArea(17.50, 3.50, x, y, 12.50, 8.50);
-
+        
         if (areaABC == (areaAPB + areaBPC + areaCPA)) {
             return true;
         } else {

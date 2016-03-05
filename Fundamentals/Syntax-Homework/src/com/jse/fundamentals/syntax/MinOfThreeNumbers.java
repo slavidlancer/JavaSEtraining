@@ -13,9 +13,9 @@ public class MinOfThreeNumbers {
         System.out.print("c = ");
         double c = input.nextDouble();
         minNumber = Math.min(minNumber, c);
-
+        
         String stringResult = String.valueOf(minNumber);
-
+        
         System.out.printf("\nmin of (%.2f, %.2f, %.2f ): %s", a, b, c,
                 stringResult);
         

@@ -9,7 +9,7 @@ public class CountEqualBitPairs {
         int number = input.nextInt();
         int mask = 3;
         int pairsCount = 0;
-
+        
         while (number > 2) {
             if ((number & mask) == 3 || (number & mask) == 0) {
                 pairsCount++;
@@ -17,9 +17,9 @@ public class CountEqualBitPairs {
             
             number >>= 1;
         }
-
+        
         System.out.printf("%nequal bit pairs (00 or 11): %d", pairsCount);
-
+        
         input.close();
     }
 }

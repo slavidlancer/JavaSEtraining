@@ -8,7 +8,7 @@ public class Count1Bits {
         System.out.print("number = ");
         int number = input.nextInt();
         int countBits = Integer.bitCount(number);
-
+        
         System.out.printf("%n%d \"1\"-bit(s)", countBits);
         
         input.close();

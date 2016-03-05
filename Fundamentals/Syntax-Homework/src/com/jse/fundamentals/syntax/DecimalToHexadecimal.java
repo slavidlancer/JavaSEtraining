@@ -7,9 +7,9 @@ public class DecimalToHexadecimal {
         Scanner input = new Scanner(System.in);
         System.out.print("number (decimal) = ");
         int decimalNumber = input.nextInt();
-
+        
         System.out.printf("\nnumber (hexadecimal): %X", decimalNumber);
-
+        
         input.close();
     }
 }

@@ -51,7 +51,7 @@ public class GeneratePDFWithDeckOfCards {
             for (int value = 0; value < 13; value++) {
                 for (int color = 0; color < 4; color++) {
                     Paragraph card = new Paragraph();
-    
+                    
                     if (color == 0 || color == 3) {
                         card = new Paragraph(values[value] + colors[color],
                                 black);
@@ -59,7 +59,7 @@ public class GeneratePDFWithDeckOfCards {
                         card = new Paragraph(values[value] + colors[color],
                                 red);
                     }
-    
+                    
                     PdfPCell cell = new PdfPCell(card);
                     cell.setVerticalAlignment(Element.ALIGN_MIDDLE);
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);

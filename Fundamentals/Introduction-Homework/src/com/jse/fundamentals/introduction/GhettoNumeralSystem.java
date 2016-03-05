@@ -8,17 +8,18 @@ public class GhettoNumeralSystem {
                 "Gee", "Bro", "Zuz", "Ma", "Duh",
                 "Yo", "Dis", "Hood", "Jam", "Mack"
         };
-        Scanner console = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("number = ");
-        String input = console.nextLine();
+        String inputString = input.nextLine();
         StringBuilder output = new StringBuilder();
-
-        for (int i = 0; i < input.length(); i++) {
-            int number = Character.getNumericValue(input.charAt(i));
+        
+        for (int i = 0; i < inputString.length(); i++) {
+            int number = Character.getNumericValue(inputString.charAt(i));
             output.append(ghettoNumbers[number]);
         }
-
+        
         System.out.print("transformed: " + output);
-        console.close();
+        
+        input.close();
     }
 }

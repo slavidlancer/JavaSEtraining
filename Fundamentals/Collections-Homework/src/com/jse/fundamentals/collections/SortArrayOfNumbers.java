@@ -13,7 +13,7 @@ public class SortArrayOfNumbers {
         int[] numbers = new int[numbersSize];
         
         for (int i = 0; i < numbersSize; i++) {
-            System.out.printf("number[%d] = ", i);
+            System.out.printf("numbers[%d] = ", i);
             numbers[i] = input.nextInt();
         }
         

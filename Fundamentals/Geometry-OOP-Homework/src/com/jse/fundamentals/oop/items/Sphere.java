@@ -30,7 +30,7 @@ public class Sphere extends SpaceShape
 
     @Override
     public String toString() {
-        return String.format("Sphere{radius=%.2f, volume=%.2f, area=%.2f, "
+        return String.format("Sphere {radius=%.2f, volume=%.2f, area=%.2f, "
                 + "vertices=%s", this.radius, this.getVolume(), this.getArea(),
                 this.getVertices());
     }

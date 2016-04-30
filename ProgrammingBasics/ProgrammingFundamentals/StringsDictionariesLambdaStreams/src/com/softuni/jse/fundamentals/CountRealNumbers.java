@@ -27,7 +27,7 @@ public class CountRealNumbers {
         }
         
         for (Double number : counts.keySet()) {
-            System.out.println(number + " -> " + counts.get(number));
+            System.out.println(number + " -> " + counts.get(number) + " times");
         }
         
         input.close();

@@ -20,7 +20,7 @@ public class OccurrencesInString {
             count++;
         }
         
-        System.out.println("Occurrencies: " + count);
+        System.out.println(count);
         
         input.close();
     }

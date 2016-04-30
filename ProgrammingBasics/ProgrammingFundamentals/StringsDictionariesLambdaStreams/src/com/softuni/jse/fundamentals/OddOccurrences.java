@@ -25,13 +25,18 @@ public class OddOccurrences {
         
         for (Map.Entry<String, Integer> entry : counts.entrySet()) {
             if (entry.getValue() % 2 != 0) {
-                result.add(entry.getKey());
+                result.add(entry.getKey().toLowerCase());
             }
         }
         
         String printResult = String.join(", ", result);
         
-        System.out.println(printResult);
+        if (!result.isEmpty()) {
+            System.out.println(printResult);
+        } else {
+            System.out.println("0");
+        }
+        
         
         input.close();
     }

@@ -33,6 +33,10 @@ public class InsertionSort {
             return;
         }
         
+        if (first == last) {
+            return;
+        }
+        
         for (int i = 1; i < last; i++) {
             for (int j = i; j > first; j--) {
                 if (arr[j] < arr[j - 1]) {

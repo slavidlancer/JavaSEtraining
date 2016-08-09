@@ -35,6 +35,10 @@ public class BubbleSort {
             return;
         }
         
+        if (first == last) {
+            return;
+        }
+        
         for (int i = 1; i < (last - first); i++) {
             swapped = false; //improvement
             

@@ -36,6 +36,10 @@ public class SelectionSort {
             return;
         }
         
+        if (first == last) {
+            return;
+        }
+        
         for (int i = first; i < (last - 1); i++) {
             minIndex = i;
             

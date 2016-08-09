@@ -38,4 +38,22 @@ public class ObtainTFromS {
         
         return result;
     }
+    
+    /* Given a string S and and String T, return:
+
+    "INSERT x" if string S can be obtained from String T by at most one insertion of character x.
+
+    For example, when S = "nice" and T = "niece", the method would return "INSERT e"
+
+    "DELETE x" if string T can be obtained from String S by at most one deletion of character x.
+
+    For example, when S = "hello" and T = "hell", the method would return "DELETE o"
+
+    "SWAP x z" if string T can be obtained from String S by swapping two adjacent characters.
+
+    For example, when S = "from" and T = "form", the method would return "SWAP r o"
+
+    "IMPOSSIBLE" if string T cannot be obtained from string S according to the rules above
+
+    "NOTHING" if string T equals string S */
 }

@@ -1,4 +1,4 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks00;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

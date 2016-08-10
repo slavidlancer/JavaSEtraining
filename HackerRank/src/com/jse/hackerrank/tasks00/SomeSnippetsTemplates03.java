@@ -1,0 +1,94 @@
+package com.jse.hackerrank.tasks00;
+
+class BinaryTree {
+    private Node root;
+    
+    private static class Node {
+        int data;
+        Node left;
+        Node right;
+        
+        Node(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
+    }
+    
+    public BinaryTree() {
+        this.root = createBinaryTree();
+    }
+    
+    public Node createBinaryTree() {
+        this.root = new Node(3);
+        Node node1 = new Node(5);
+        Node node2 = new Node(1);
+        Node node3 = new Node(4);
+        Node node4 = new Node(2);
+        Node node5 = new Node(6);
+        
+        this.root.left = node1;
+        this.root.right = node4;
+        
+        node1.left = node2;
+        node1.right = node3;
+        
+        node4.left = node5;
+        node4.right = null;
+        
+        return this.root;
+    }
+    
+    public Node root() {
+        return this.root;
+    }
+    
+    public static void preOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+        
+        System.out.print(root.data + " ");
+        
+        preOrder(root.left);
+        preOrder(root.right);
+    }
+    
+    public static void postOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+        
+        postOrder(root.left);
+        postOrder(root.right);
+        
+        System.out.print(root.data + " ");
+    }
+    
+    public static void inOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+        
+        inOrder(root.left);
+        
+        System.out.print(root.data + " ");
+        
+        inOrder(root.right);
+    }
+}
+
+public class SomeSnippetsTemplates03 {
+    public static void main(String[] args) {
+        BinaryTree binaryTree = new BinaryTree();
+        
+        System.out.println("pre-order:");
+        BinaryTree.preOrder(binaryTree.root());
+        
+        System.out.println("\n\nin-order:");
+        BinaryTree.inOrder(binaryTree.root());
+        
+        System.out.println("\n\npost-order:");
+        BinaryTree.postOrder(binaryTree.root());
+    }
+}

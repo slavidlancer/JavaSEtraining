@@ -1,13 +1,13 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks00;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
+class Student {}
+class Rockstar {}
+class Hacker {}
+
 public class SomeSnippetsTemplates06 {
-    static class Student {}
-    static class Rockstar {}
-    static class Hacker {}
-    
     public static void main(String[] args) {
         ArrayList<Object> mylist = new ArrayList<>();
         Scanner input = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class SomeSnippetsTemplates06 {
         input.close();
     }
     
-    static String count(ArrayList<Object> mylist) {
+    private static String count(ArrayList<Object> mylist) {
         int a = 0, b = 0, c = 0;
         
         for (int i = 0; i < mylist.size(); i++) {

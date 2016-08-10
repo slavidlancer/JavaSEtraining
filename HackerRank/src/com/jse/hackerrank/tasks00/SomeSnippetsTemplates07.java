@@ -1,12 +1,13 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks00;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class SomeSnippetsTemplates07 {
     public static void main(String[] args) {
-        ArrayList<Object> mylist = new ArrayList<>();
+        List<Object> mylist = new ArrayList<>();
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int m = input.nextInt();
@@ -32,7 +33,7 @@ public class SomeSnippetsTemplates07 {
         input.close();
     }
 
-    static Iterator<?> getCustomIterator(ArrayList<Object> mylist){
+    private static Iterator<?> getCustomIterator(List<Object> mylist){
         Iterator<?> iterator = mylist.iterator();
         
         while(iterator.hasNext()){

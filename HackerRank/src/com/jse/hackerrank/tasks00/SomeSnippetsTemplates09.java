@@ -1,22 +1,22 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks00;
 
 import java.util.Scanner;
 
-public class SomeSnippetsTemplates09 {
-    static class MyCalculator {
-        long power(int n, int p) throws Exception {
-            long pow = -1;
-            
-            if ((n < 0) || (p < 0)) {
-                throw new Exception("n and p should be non-negative");
-            } else {
-                pow = (long) Math.pow(n, p);
-            }
-            
-            return pow;
+class MyCalculator {
+    public long power(int n, int p) throws Exception {
+        long pow = -1;
+        
+        if ((n < 0) || (p < 0)) {
+            throw new Exception("n and p should be non-negative");
+        } else {
+            pow = (long) Math.pow(n, p);
         }
+        
+        return pow;
     }
-    
+}
+
+public class SomeSnippetsTemplates09 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         

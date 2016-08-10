@@ -1,23 +1,23 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks01;
 
 import java.util.Scanner;
 
-public class SomeSnippetsTemplates14 {
-    static class Singleton {
-        private static Singleton instance = null;
-        public String str;
-        
-        private Singleton() {}
-        
-        public static Singleton getSingleInstance() {
-            if (instance == null) {
-                instance = new Singleton();
-            }
-            
-            return instance;
-        }
-    }
+class Singleton {
+    private static Singleton instance = null;
+    public String str;
     
+    private Singleton() {}
+    
+    public static Singleton getSingleInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        
+        return instance;
+    }
+}
+
+public class SomeSnippetsTemplates14 {
     public static void main(String[] args) {
         Singleton singleton = Singleton.getSingleInstance();
         singleton.str = "check";

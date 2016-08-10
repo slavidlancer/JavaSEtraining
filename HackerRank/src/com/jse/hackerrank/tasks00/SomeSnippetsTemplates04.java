@@ -1,15 +1,15 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks00;
+
+class Node {
+    int data;
+    Node next;
+    
+    public Node(int data) {
+        this.data = data;
+    }
+}
 
 public class SomeSnippetsTemplates04 {
-    static class Node {
-        int data;
-        Node next;
-        
-        public Node(int data) {
-            this.data = data;
-        }
-    }
-    
     public static void main(String[] args) {
         //LinkedList linkedList = new LinkedList(); //SomeSnippetsTemplates04
         Node headOffirstLinkedList = null;
@@ -41,7 +41,7 @@ public class SomeSnippetsTemplates04 {
         return head;
     }
     
-    static void printElements(Node head) {
+    private static void printElements(Node head) {
         while (head != null) {
             System.out.println(head.data);
             
@@ -49,7 +49,7 @@ public class SomeSnippetsTemplates04 {
         }
     }
     
-    static Node insert(Node head,int x) {
+    private static Node insert(Node head,int x) {
         if (head == null) {
             Node newHead = new Node(x);
             //newHead.data = x;

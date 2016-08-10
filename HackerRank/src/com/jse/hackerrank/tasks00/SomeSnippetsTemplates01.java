@@ -1,4 +1,4 @@
-package com.jse.hackerrank;
+package com.jse.hackerrank.tasks00;
 
 import java.util.Scanner;
 import java.util.Stack;

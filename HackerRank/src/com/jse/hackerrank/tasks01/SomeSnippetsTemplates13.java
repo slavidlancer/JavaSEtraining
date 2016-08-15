@@ -92,7 +92,6 @@ public class SomeSnippetsTemplates13 {
         
         printArray(A);
     }
-
     
     private static void printArray(int[] arr) {
         for (int a : arr) {

@@ -3,32 +3,20 @@ package com.jse.hackerrank.tasks00;
 class BinaryTree {
     private Node root;
     
-    private static class Node {
-        int data;
-        Node left;
-        Node right;
-        
-        Node(int data) {
-            this.data = data;
-            this.left = null;
-            this.right = null;
-        }
-    }
-    
     public BinaryTree() {
         this.root = createBinaryTree();
     }
     
-    public Node createBinaryTree() {
-        this.root = new Node(3);
+    private static Node createBinaryTree() {
+        Node root = new Node(3);
         Node node1 = new Node(5);
         Node node2 = new Node(1);
         Node node3 = new Node(4);
         Node node4 = new Node(2);
         Node node5 = new Node(6);
         
-        this.root.left = node1;
-        this.root.right = node4;
+        root.left = node1;
+        root.right = node4;
         
         node1.left = node2;
         node1.right = node3;
@@ -36,7 +24,7 @@ class BinaryTree {
         node4.left = node5;
         node4.right = null;
         
-        return this.root;
+        return root;
     }
     
     public Node root() {
@@ -75,6 +63,18 @@ class BinaryTree {
         System.out.print(root.data + " ");
         
         inOrder(root.right);
+    }
+    
+    private static class Node {
+        int data;
+        Node left;
+        Node right;
+        
+        Node(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
     }
 }
 

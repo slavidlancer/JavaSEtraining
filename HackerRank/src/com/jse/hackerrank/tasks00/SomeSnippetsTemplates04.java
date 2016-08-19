@@ -61,7 +61,7 @@ class LinkedList {
         }
     }
     
-    public Node insert(Node head, int x) {
+    public Node insertAtHead(Node head, int x) {
         if (head == null) {
             Node newHead = new Node(x);
             /*newHead.data = x;
@@ -79,6 +79,24 @@ class LinkedList {
         this.head = newHead;
         
         return newHead;
+    }
+    
+    public Node insertAtTail(Node head, int x) {
+        Node newHead = new Node(x);
+        
+        if (head == null) {
+            return newHead;
+        }
+        
+        Node start = head;
+        
+        while (start.next() != null) {
+            start = start.next();
+        }
+        
+        start.setNext(newHead);
+        
+        return head;
     }
     
     public boolean hasCycle(Node head) {
@@ -114,6 +132,12 @@ class Node {
     
     public Node(int data) {
         this.data = data;
+        this.next = null;
+    }
+    
+    public Node(int data, Node next) {
+        this.data = data;
+        this.next = next;
     }
     
     public int data() {
@@ -156,9 +180,9 @@ public class SomeSnippetsTemplates04 {
             secondLinkedList.printElements(thirdLinkedList.head());
         }
         
-        Node nodeInFirstLinkedList = firstLinkedList.insert(
+        Node nodeInFirstLinkedList = firstLinkedList.insertAtHead(
                 firstLinkedList.head(), 10);
-        Node nodeInSecondLinkedList = secondLinkedList.insert(
+        Node nodeInSecondLinkedList = secondLinkedList.insertAtHead(
                 secondLinkedList.head(), 20);
         
         System.out.println("last 2 inserted nodes, in first and second "
@@ -170,6 +194,21 @@ public class SomeSnippetsTemplates04 {
         System.out.println(firstLinkedList.head());
         System.out.println("second linkedlist, head:");
         System.out.println(secondLinkedList.head());
+        
+        System.out.println("first linkedlist:");
+        firstLinkedList.printElements(firstLinkedList.head());
+        System.out.println("second linkedlist:");
+        secondLinkedList.printElements(secondLinkedList.head());
+        
+        Node nodeInFirstLinkedListAtTail = firstLinkedList.insertAtTail(
+                firstLinkedList.head(), 10);
+        Node nodeInSecondLinkedListAtTail = secondLinkedList.insertAtTail(
+                secondLinkedList.head(), 20);
+        
+        System.out.println("last 2 inserted nodes, in first and second "
+                + "linkedlists:");
+        System.out.println(nodeInFirstLinkedListAtTail);
+        System.out.println(nodeInSecondLinkedListAtTail);
         
         System.out.println("first linkedlist:");
         firstLinkedList.printElements(firstLinkedList.head());

@@ -66,15 +66,38 @@ class BinaryTree {
     }
     
     private static class Node {
-        int data;
-        Node left;
-        Node right;
+        private int data;
+        private Node left;
+        private Node right;
         
         Node(int data) {
             this.data = data;
             this.left = null;
             this.right = null;
         }
+        
+        /*public int data() {
+            return this.data;
+        }
+        
+        public void setData(int data) {
+            this.data = data;
+        }
+        
+        public Node left() {
+            return this.left;
+        }
+        
+        public void setLeft(Node left) {
+            this.left = left;
+        }
+        
+        public Node right() {
+            return this.right;
+        }
+        public void setRight(Node right) {
+            this.right = right;
+        }*/
     }
 }
 

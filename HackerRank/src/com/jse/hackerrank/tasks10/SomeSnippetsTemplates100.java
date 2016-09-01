@@ -1,4 +1,4 @@
-package com.jse.hackerrank.tasks081;
+package com.jse.hackerrank.tasks10;
 
 class LinkedList<T> {
     private Node<T> head;
@@ -115,7 +115,7 @@ class Node<T> {
     }
 }
 
-public class SomeSnippetsTemplates085 {
+public class SomeSnippetsTemplates100 {
     public static void main(String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.remove();

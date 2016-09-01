@@ -1,4 +1,4 @@
-package com.jse.hackerrank.tasks081;
+package com.jse.hackerrank.tasks09;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ class Calculator implements AdvancedArithmetic {
     }
 }
 
-public class SomeSnippetsTemplates084 {
+public class SomeSnippetsTemplates96 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();

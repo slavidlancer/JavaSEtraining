@@ -1,4 +1,4 @@
-package com.jse.hackerrank.tasks091;
+package com.jse.hackerrank.tasks11;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ class Node {
     }
 }
 
-public class SomeSnippetsTemplates094 {
+public class SomeSnippetsTemplates110 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Node head = null;

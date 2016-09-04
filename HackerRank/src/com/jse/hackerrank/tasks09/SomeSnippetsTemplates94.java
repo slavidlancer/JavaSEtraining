@@ -1,15 +1,17 @@
 package com.jse.hackerrank.tasks09;
 
+@SuppressWarnings("rawtypes")
 interface Tree<E extends Comparable> {
     boolean isEmpty();
 
     int cardinality();
 
-    boolean member(E element);
+    boolean isMember(E element);
 
     NonEmptyBST<E> add(E element);
 }
 
+@SuppressWarnings("rawtypes")
 class EmptyBST<E extends Comparable> implements Tree<E> {
     @Override
     public boolean isEmpty() {
@@ -22,7 +24,7 @@ class EmptyBST<E extends Comparable> implements Tree<E> {
     }
 
     @Override
-    public boolean member(E element) {
+    public boolean isMember(E element) {
         return false;
     }
 
@@ -32,6 +34,7 @@ class EmptyBST<E extends Comparable> implements Tree<E> {
     }
 }
 
+@SuppressWarnings("rawtypes")
 class NonEmptyBST<E extends Comparable> implements Tree<E> {
     E data;
     Tree<E> left, right;
@@ -58,19 +61,21 @@ class NonEmptyBST<E extends Comparable> implements Tree<E> {
         return 1 + this.left.cardinality() + this.right.cardinality();
     }
 
+    @SuppressWarnings("unchecked")
     @Override
-    public boolean member(E element) {
+    public boolean isMember(E element) {
         if (this.data == element) {
             return true;
         } else {
             if (element.compareTo(this.data) < 0) {
-                return left.member(element);
+                return left.isMember(element);
             } else {
-                return right.member(element);
+                return right.isMember(element);
             }
         }
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public NonEmptyBST<E> add(E element) {
         if (this.data == element) {
@@ -96,10 +101,10 @@ public class SomeSnippetsTemplates94 {
         nonEmptyTreeOfStrings = nonEmptyTreeOfStrings.add("second");
         System.out.println(emptyTreeOfStrings.cardinality());
         System.out.println(emptyTreeOfStrings.isEmpty());
-        System.out.println(emptyTreeOfStrings.member("element"));
+        System.out.println(emptyTreeOfStrings.isMember("element"));
         
         System.out.println(nonEmptyTreeOfStrings.cardinality());
         System.out.println(nonEmptyTreeOfStrings.isEmpty());
-        System.out.println(nonEmptyTreeOfStrings.member("element"));
+        System.out.println(nonEmptyTreeOfStrings.isMember("element"));
     }
 }
